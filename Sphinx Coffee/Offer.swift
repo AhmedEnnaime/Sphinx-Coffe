@@ -16,7 +16,10 @@ struct Offer: View {
             Text(title)
                 .padding()
                 .font(.title)
+                .background(Color("CardBackground"))
             Text(description)
+                .padding()
+                .background(Color("CardBackground"))
         }
     }
 }
