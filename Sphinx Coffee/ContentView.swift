@@ -11,24 +11,22 @@ struct ContentView: View {
    
     var body: some View {
         VStack {
-            Greeting()
-            Greeting()
-            Greeting()
-            Greeting()
-        }
-    }
-}
-
-struct Greeting: View {
-    @State var name = ""
-    var body: some View{
-        VStack{
-            TextField("Enter your name", text: $name)
-            Text("Hello \(name)" + "!!")
+           Offer(title: "Offer 1", description: "Description 1")
             
         }
     }
 }
+
+//struct Greeting: View {
+//    @State var name = ""
+//    var body: some View{
+//        VStack{
+//            TextField("Enter your name", text: $name)
+//            Text("Hello \(name)" + "!!")
+//
+//        }
+//    }
+//}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
