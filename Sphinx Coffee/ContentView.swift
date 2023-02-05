@@ -11,22 +11,22 @@ struct ContentView: View {
    
     var body: some View {
         TabView {
-            Text("Home page")
+            MenuPage()
                 .tabItem{
                     Image(systemName: "cup.and.saucer")
-                    Text("Home page")
+                    Text("Menu")
                 }
            OffersPage()
                 .tabItem{
                     Image(systemName: "tag")
                     Text("Offers")
                 }
-            Text("Order page")
+            OrdersPage()
                 .tabItem{
                     Image(systemName: "cart")
                     Text("Order")
                 }
-            Text("Info page")
+            InfoPage()
                 .tabItem{
                     Image(systemName: "info")
                     Text("Info")
