@@ -10,8 +10,27 @@ import SwiftUI
 struct ContentView: View {
    
     var body: some View {
-        VStack {
+        TabView {
+            Text("Home page")
+                .tabItem{
+                    Image(systemName: "cup.and.saucer")
+                    Text("Home page")
+                }
            OffersPage()
+                .tabItem{
+                    Image(systemName: "tag")
+                    Text("Offers")
+                }
+            Text("Order page")
+                .tabItem{
+                    Image(systemName: "cart")
+                    Text("Order")
+                }
+            Text("Info page")
+                .tabItem{
+                    Image(systemName: "info")
+                    Text("Info")
+                }
         }
     }
 }
