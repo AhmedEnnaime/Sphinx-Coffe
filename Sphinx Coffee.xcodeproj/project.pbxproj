@@ -11,6 +11,10 @@
 		F21B36F62986AFF6007F4C26 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21B36F52986AFF6007F4C26 /* ContentView.swift */; };
 		F21B36F82986AFF8007F4C26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F21B36F72986AFF8007F4C26 /* Assets.xcassets */; };
 		F21B36FB2986AFF8007F4C26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F21B36FA2986AFF8007F4C26 /* Preview Assets.xcassets */; };
+		F29567352992A25E00353B74 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29567342992A25E00353B74 /* Category.swift */; };
+		F29567372992A27F00353B74 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29567362992A27F00353B74 /* Product.swift */; };
+		F29567392992A65400353B74 /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29567382992A65400353B74 /* MenuManager.swift */; };
+		F295673B2992A66E00353B74 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295673A2992A66E00353B74 /* CartManager.swift */; };
 		F2DB7ABD298EF5F8008D8BB4 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7ABC298EF5F8008D8BB4 /* Offer.swift */; };
 		F2DB7ABF298F0CF0008D8BB4 /* OffersPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB7ABE298F0CF0008D8BB4 /* OffersPage.swift */; };
 		F2EBC995299068D400825051 /* MenuPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EBC994299068D400825051 /* MenuPage.swift */; };
@@ -26,6 +30,10 @@
 		F21B36F52986AFF6007F4C26 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F21B36F72986AFF8007F4C26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F21B36FA2986AFF8007F4C26 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F29567342992A25E00353B74 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		F29567362992A27F00353B74 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		F29567382992A65400353B74 /* MenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
+		F295673A2992A66E00353B74 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
 		F2DB7ABC298EF5F8008D8BB4 /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
 		F2DB7ABE298F0CF0008D8BB4 /* OffersPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersPage.swift; sourceTree = "<group>"; };
 		F2EBC994299068D400825051 /* MenuPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPage.swift; sourceTree = "<group>"; };
@@ -65,6 +73,7 @@
 		F21B36F22986AFF6007F4C26 /* Sphinx Coffee */ = {
 			isa = PBXGroup;
 			children = (
+				F29567332992A23800353B74 /* Model */,
 				F2EBC9932990689D00825051 /* Page Views */,
 				F2EBC9922990688300825051 /* Views */,
 				F21B36F32986AFF6007F4C26 /* Sphinx_CoffeeApp.swift */,
@@ -81,6 +90,17 @@
 				F21B36FA2986AFF8007F4C26 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F29567332992A23800353B74 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F29567342992A25E00353B74 /* Category.swift */,
+				F29567362992A27F00353B74 /* Product.swift */,
+				F29567382992A65400353B74 /* MenuManager.swift */,
+				F295673A2992A66E00353B74 /* CartManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F2EBC9922990688300825051 /* Views */ = {
@@ -174,10 +194,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F29567392992A65400353B74 /* MenuManager.swift in Sources */,
+				F295673B2992A66E00353B74 /* CartManager.swift in Sources */,
 				F2DB7ABD298EF5F8008D8BB4 /* Offer.swift in Sources */,
+				F29567352992A25E00353B74 /* Category.swift in Sources */,
 				F2DB7ABF298F0CF0008D8BB4 /* OffersPage.swift in Sources */,
 				F2EBC995299068D400825051 /* MenuPage.swift in Sources */,
 				F2EBC99D29906C4200825051 /* DetailsPage.swift in Sources */,
+				F29567372992A27F00353B74 /* Product.swift in Sources */,
 				F2EBC999299068F600825051 /* InfoPage.swift in Sources */,
 				F2EBC99B299069E900825051 /* ProductItem.swift in Sources */,
 				F21B36F62986AFF6007F4C26 /* ContentView.swift in Sources */,
