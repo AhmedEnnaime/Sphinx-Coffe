@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var cartManager: CartManager
    
     var body: some View {
         TabView {
@@ -26,6 +27,7 @@ struct ContentView: View {
                     Image(systemName: "cart")
                     Text("Order")
                 }
+                .badge(cartManager.cart.count)
             InfoPage()
                 .tabItem{
                     Image(systemName: "info")
@@ -34,17 +36,6 @@ struct ContentView: View {
         }
     }
 }
-
-//struct Greeting: View {
-//    @State var name = ""
-//    var body: some View{
-//        VStack{
-//            TextField("Enter your name", text: $name)
-//            Text("Hello \(name)" + "!!")
-//
-//        }
-//    }
-//}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
