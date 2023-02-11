@@ -12,6 +12,7 @@ struct OrdersPage: View {
     @State var phone: String = ""
     // Bring the singleton that was injected in the app
     @EnvironmentObject var cartManager: CartManager
+    
     var body: some View {
         NavigationView {
                     if cartManager.cart.count == 0 {

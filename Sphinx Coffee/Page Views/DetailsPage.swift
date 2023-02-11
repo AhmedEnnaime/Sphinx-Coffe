@@ -9,8 +9,10 @@ import SwiftUI
 
 struct DetailsPage: View {
     @State var quantity = 1
-    @EnvironmentObject var cartManager: CartManager
     var product: Product
+    @EnvironmentObject var cartManager: CartManager
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         ScrollView {
             AsyncImage(url: product.imageURL)
@@ -41,6 +43,7 @@ struct DetailsPage: View {
             Button("Add \(quantity) to Cart") {
                 //TODO
                 cartManager.add(product: product, quantity: quantity)
+                dismiss()
             }
                 .padding()
                 .frame(width: 250.0)
